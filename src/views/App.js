@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './App.js';
 import GetJSONData from './getJSONData';
+import './App.js';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="header">Local Storage</h1>
+        <h1>Stats Web</h1>
         <GetJSONData/>
       </div>
     );

@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Collapsible from 'react-Collapsible';
+import Collapsible from 'react-collapsible';
+import GetJSONApiSimple from './views/GetJSONApiSimple';
+import App from './views/App';
+import './index.css';
+import GetJSONApiMedium from './views/GetJSONApiMedium';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Collapsible trigger="stuff">
             <App />
+        <Collapsible trigger="API Names">
+            <GetJSONApiSimple/>
+        </Collapsible>
+        <Collapsible trigger="More API Stuff">
+            <GetJSONApiMedium/>
         </Collapsible>
     </React.StrictMode>,
     document.getElementById('root')
