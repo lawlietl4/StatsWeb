@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
+import './getJSONData.css';
 
-import data from './example.json';
+import model from './StatsRunnerExampleResult.json';
 // get posts from online api
 // it's return a json file
 class GetJSONData extends Component {
   render() {
     // const { examples } = this.state;
     return (
-      <div>
-        <ul className="item">
-          {
-            data.Examples.map(example => (
-              <li key={ example.id } align="start">
-                <div>
-                  <p className="title">{ example.name }</p>
-                  <p className="body">{ example.description }</p>
-                </div>
-              </li>
-            ))
-          }
-        </ul>
+      <div className="ParentElement">
+        <p>Number of APIs: { model['Number of APIs'] }</p>
+        {
+          model['API Names'].map(stuff => (
+            <p>
+              { stuff }
+            </p>
+          ))
+        }
       </div>
     );
   }

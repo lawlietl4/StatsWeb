@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Collapsible from 'react-Collapsible';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Collapsible trigger="stuff">
+            <App />
+        </Collapsible>
     </React.StrictMode>,
     document.getElementById('root')
 );
