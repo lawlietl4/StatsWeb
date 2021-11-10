@@ -8,10 +8,13 @@ import GetJSONApiMega from './views/GetJSONApiMega';
 
 ReactDOM.render(
     <React.StrictMode>
-            <App />
-        <Collapsible trigger="API Names">
-            <GetJSONApiMega/>
-        </Collapsible>
+        <h1 className="navBar">AdvancedMD API Statistics</h1>
+        <App />
+        <div className="information">
+            <Collapsible trigger="API Names">
+                <GetJSONApiMega/>
+            </Collapsible>
+        </div>
     </React.StrictMode>,
     document.getElementById('root')
 );

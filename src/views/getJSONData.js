@@ -8,7 +8,7 @@ class GetJSONData extends Component {
   render() {
     // const { examples } = this.state;
     return (
-      <div>
+      <div className="information">
         <p>Number of API Calls: {model['Number Of API Calls']}</p>
         <p>Number of APIs: {model['Number Of APIs']}</p>
         <p>Average Number of API Calls: {model['Average Calls Per API']}</p>

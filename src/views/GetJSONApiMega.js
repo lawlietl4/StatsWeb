@@ -5,12 +5,12 @@ import model from '../StatsRunnerExampleResult.json';
 class GetJSONApiMega extends Component {
     render() {
         return (
-            <div>
-                {model['API Names and Calls With Folders'].map((result, i) => (
+            <div className="data">
+                {model['API Names and Calls With Folders'].map((value) => (
                     <div>
-                        <div className="ScriptsContent">{result['Scripts']}</div>
-                        <div key={i} className="AccountingAPIContent">{result['Accounting - API']}</div>
-                        <div key={"result['API - MiddleTier']+{this.i}"} className="APIMiddleTier">{result['API - MiddleTier']}</div>
+                        <div className="Content">
+                            <p>{value['API - MiddleTier']}</p>
+                        </div>
                     </div>
                 ))}
             </div>
