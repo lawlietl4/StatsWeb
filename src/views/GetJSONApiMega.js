@@ -7,11 +7,11 @@ class GetJSONApiMega extends Component {
     render() {
         return (
             <div className="data">
-                {model['API Names'].map((value) => (
+                {model['API Names and Calls With Folders'].map((value) => (
                     <div>
                         <div className="Content">
-                            <Collapsible trigger={value}>
-                                <p>{value}</p>
+                            <Collapsible trigger={Object.keys(value)}>
+                                <div>{Object.values(value).toString()}</div>
                             </Collapsible>
                         </div>
                     </div>
