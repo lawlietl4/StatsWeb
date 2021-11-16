@@ -11,7 +11,7 @@ class GetJSONApiMega extends Component {
                     <div>
                         <div className="Content">
                             <Collapsible trigger={Object.keys(value)}>
-                                <div>{Object.values(value).toString()}</div>
+                                <div>{(Array.isArray(value) ? Object.values(value).toString() : Object.entries(value).map((value)=>(console.log(value))))}</div>
                             </Collapsible>
                         </div>
                     </div>
