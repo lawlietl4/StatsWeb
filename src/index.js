@@ -5,6 +5,8 @@ import Collapsible from 'react-collapsible';
 import App from './views/App';
 import './index.css';
 import GetJSONApiMega from './views/GetJSONApiMega';
+import model from './StatsRunnerExampleResult.json';
+import GetJSONApiMedium from './views/GetJSONApiMedium';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -12,7 +14,10 @@ ReactDOM.render(
         <App />
         <div className="information">
             <Collapsible trigger="API Names">
-                <GetJSONApiMega/>
+                <GetJSONApiMega />
+            </Collapsible>
+            <Collapsible trigger="API - MiddleTier">
+                <GetJSONApiMedium />
             </Collapsible>
         </div>
     </React.StrictMode>,

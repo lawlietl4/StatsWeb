@@ -2,14 +2,17 @@ import { Component } from 'react';
 import model from '../StatsRunnerExampleResult.json';
 import './GetJSONApiMedium.css';
 
-class GetJSONApiMedium extends Component{
-    render(){
-        return(
+class GetJSONApiMedium extends Component {
+    render() {
+        return (
             <div>
-                {model['API Names and Calls'].map(result=>(
-                    <p>
-                        {result['API - MiddleTier']}
-                    </p>
+                <h1>API - MiddleTier</h1>
+                {model['API Names and Calls With Folders'].map((value) => (
+                    <div>
+                        <div className="information">
+                            <p>{value['API - MiddleTier']}</p>
+                        </div>
+                    </div>
                 ))}
             </div>
         )

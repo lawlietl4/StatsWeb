@@ -1,15 +1,18 @@
 import { Component } from 'react';
 import './GetJSONApiMega.css';
 import model from '../StatsRunnerExampleResult.json';
+import Collapsible from 'react-collapsible';
 
 class GetJSONApiMega extends Component {
     render() {
         return (
             <div className="data">
-                {model['API Names and Calls With Folders'].map((value) => (
+                {model['API Names'].map((value) => (
                     <div>
                         <div className="Content">
-                            <p>{value['API - MiddleTier']}</p>
+                            <Collapsible trigger={value}>
+                                <p>{value}</p>
+                            </Collapsible>
                         </div>
                     </div>
                 ))}
