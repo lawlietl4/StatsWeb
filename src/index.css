@@ -3,12 +3,11 @@
   background-color: #afafaf;
   border:5px;
   border-color: black solid;
+  width: 67%;
+  outline: black solid;
 }
 .App{
   padding: 5px;
-}
-.information{
-  cursor: pointer;
 }
 body{
   background-image: url('./logo.svg');
