@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Collapsible from 'react-collapsible';
-import App from './views/App';
 import './index.css';
 import GetJSONApiMega from './views/GetJSONApiMega';
+import GetJSONData from './views/getJSONData';
 
 ReactDOM.render(
     <React.StrictMode>
         <h1 className="navBar">AdvancedMD API Statistics</h1>
-        <App />
+        <GetJSONData />
         <div className="information">
             <Collapsible trigger="API Names and Calls">
                 <GetJSONApiMega />
