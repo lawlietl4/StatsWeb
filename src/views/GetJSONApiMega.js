@@ -11,7 +11,7 @@ class GetJSONApiMega extends Component {
                     <div>
                         <div className="Content">
                             <Collapsible trigger={Object.keys(value).toString()}>
-                                <p>{value}</p>
+                                <p>{Object.values(value).toString()}</p>
                             </Collapsible>
                         </div>
                     </div>
