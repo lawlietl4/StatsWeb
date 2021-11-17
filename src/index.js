@@ -11,7 +11,7 @@ ReactDOM.render(
         <h1 className="navBar">AdvancedMD API Statistics</h1>
         <GetJSONData />
         <div className="information">
-            <Collapsible trigger="API Names and Calls">
+            <Collapsible class="dropdown-menu" trigger="API Names and Calls">
                 <GetJSONApiMega />
             </Collapsible>
         </div>
