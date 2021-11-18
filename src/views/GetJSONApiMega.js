@@ -12,7 +12,7 @@ class GetJSONApiMega extends Component {
                     <div>
                         <div class="dropdown-menu" className="Content">
                             <Collapsible className="APINames" trigger={Object.keys(value).toString()}>
-                                <p class="dropdown-item" className="APIValues">{JSON.stringify(Object.values(value))}</p>
+                                <p class="dropdown-item" className="APIValues">{JSON.stringify(Object.values(value)).replace(/[[+"+\]]/g,'').replace(/{/g, '(').replace(/}/g,')').replace(/,/g,', ').replace(/:/g,': ')}</p>
                             </Collapsible>
                         </div>
                     </div>
